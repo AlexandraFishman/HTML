@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html >
+<head>
+  <style type="text/css">
+  
+  .A
+  {
+    width: 40%;
+    height:200px;
+    background-color:lightblue ;
+    text-align: center;
+    float:left;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin-left: 50px;
+    margin-top: 200px;*/
+  }
+  .B
+  {
+    width: 40%;
+    height:200px;
+    background-color:lightblue ;
+    text-align: center;
+    float:right;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: end;
+    align-items: center;
+    justify-content: center; 
+    align-self: flex-end; 
+    /*margin-right: 50px;
+    margin-top: 200px;*/
+  }
+  
+.container{
+               width:100%;
+               height:100%;
+               display:flex;
+               /*justify-content:center;
+               align-items:center;*/
+  }
 
-<div id="A" style="background-color:lightblue">
-  <head>
-<h1>A</h1>
+  html,body{
+  height:100%;
+  padding:0;
+  margin:0;
+}
+  </style>
 </head>
+<body>
+  <div class = "container">
+    <div class="A">
+      <h1>A</h1>  
+    </div>
+    <div class="B">
+      <h2>B</h2>
+  </div>
 </div>
-
-<style>
-	h1   {text-align: center}
- #A { 
- 		/*float: left;
-     	width: 200px;
-    	height: 200px;*/
-    	/*margin-left: 200px;*/
-    	/*margin:  auto;*/
-    	/*background-color: lightblue;*/
-    	width: 800px;
-    	height: 600px;
-    	margin: 0 auto;
-    	border: 1px solid #ccc;
-    	display: flex;
-    	align-items: center;
-    	justify-content: center;
-	}
- #b { 
- 		/*float: right;
-     	width: 200px;
-    	height: 200px;
-    	margin-right: 200px;
-    	margin: auto;*/
-    	/*background-color: lightblue;*/
-
-    	height: 100px;
-    	width: 100px;
-    	background: #efefef;
-    	margin-left: 2px;
-    	border: 1px solid #ccc;
-	}
-</style>
-
-
-
-<div id="B" style="background-color:lightblue">
-  <head>
-<h1>B</h1>
-<style>
-	h1   {text-align: center}
-</style>
-</head>
-</div>
+</body>
 </html>
