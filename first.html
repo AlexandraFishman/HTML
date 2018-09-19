@@ -9,7 +9,7 @@
     height:200px;
     position: relative;
     background-color:lightblue;
-    text-align: center;
+    text-align: left;
     /*float:left;*/
     /*margin: 0 auto;*/
     display: flex;
@@ -47,6 +47,12 @@
                align-items:center;
 }
 
+.hA{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
   html,body{
   height:100%;
   padding:0;
@@ -57,7 +63,7 @@
 <body>
   <div class = "container">
     <div class="A">
-      <h1>A</h1> 
+      <h1  class ="hA">A</h1> 
         <div class="B">
         <h2>B</h2>
         </div> 
